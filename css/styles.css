@@ -1,1 +1,91 @@
 /* Ini CSS */
+
+.main-title {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-around
+}
+
+.main-content {
+    flex: 1;
+    padding: 12px;
+}
+
+.container-d-hidden {
+    flex: 1;
+    padding: 12px;
+}
+
+.form {
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: pink;
+    padding: 12px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.btn-submit {
+    background-color: palevioletred;
+    border: 1px solid brown;
+    color: white;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.btn-reset {
+    background-color: whitesmoke;
+    border: 1px solid brown;
+    border-radius: 4px;
+    height: 20px;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=number]:focus {
+    border: 3px solid palevioletred;
+}
+
+.sub-container-mb-1 {
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: pink;
+    padding: 12px;
+    text-align: center;
+}
+
+.btn-result {
+    background-color: palevioletred;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid brown;
+}
+
+.btn-kores {
+    background-color: lightcoral;
+    border: 2px solid palevioletred;
+    color: white;
+    height: 30px;
+    font-weight: bold;
+}
+
+.sub-container-paragraph {
+    background-color: pink;
+    border: 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    padding: 12px;
+}
