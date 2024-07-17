@@ -1,14 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>Document Naffa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator BMI</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body> 
-    
-</body>
+<body>
+    <!-- Main Title -->
+    <header class="main-title">
+        <h1 class="title">BMI CALCULATOR</h1>
+    </header>
 
+<main>
+     <!-- Left Content -->
+    <section class="main-content">
+        <!-- Main Article -->
+    <article>
+        <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki tubuh yang
+            menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?
+            Yuk, hitung sekarang di kalkulator BMI.</p>
+    </article>
+
+    <section class="container-d-hidden">
+          <form id="form" class="form" aria-label="Kalkulator BMI">
+            <div>
+              <label class="form-label" for="gender">Jenis Kelamin</label>
+              <div class="input-group">
+                <input type="radio" name="gender" id="male" value="Laki-Laki" class="form-input-check" checked>
+                <label for="male">Laki-Laki</label>
+                <input type="radio" name="gender" id="female" value="Perempuan" class="form-input-check">
+                <label for="female">Perempuan</label>
+              </div>
+              <span id="genderErrorMessage" class="error-message"></span>
+            </div>
+  
+            <div>
+              <label for="weight">Berat Badan (kg)</label>
+              <div class="input-group">
+                <input type="number" name="weight" id="weight" class="form-input" min="1" aria-describedby="weightDesc">
+              </div>
+              <span id="weightErrorMessage" class="error-message"></span>
+            </div>
+  
+            <div>
+              <label for="age">Umur (th)</label>
+              <div class="input-group">
+                <input type="number" name="age" id="age" class="form-input" min="1" aria-describedby="ageDesc">
+              </div>
+              <span id="ageErrorMessage" class="error-message"></span>
+            </div>
+  
+            <div>
+              <label for="height">Tinggi Badan (cm)</label>
+              <div class="input-group">
+                <input type="number" name="height" id="height" class="form-input" min="1" aria-describedby="heightDesc">
+              </div>
+              <span id="heightErrorMessage" class="error-message"></span>
+            </div>
+  
+            <div>
+              <button type="button" class="btn" onclick="checkBMI()">Submit BMI</button>
+              <button type="reset" class="btn-reset">Reset</button>
+            </div>
+          </form>
+        </div>
+
+      <div class="mb-1">
+        <h3 class="sub-title">Keunggulan fitur</h3>
+        <ol class="features">
+          <li>Menghitung berat badan</li>
+          <li>Menentukan kategori berat badan ideal atau tidak</li>
+          <li>Mempersiapkan program penurunan berat badan</li>
+        </ol>
+      </div>
+      <div>
+        <p class="paragraph mb-1">
+          Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+        </p>
+        <p class="paragraph">
+          Kalkulator akan memberi anda gambaran tentang perbandingan berat badan anda dengan nilai umum. Indek Massa Tubuh (atau BMI) dihitung sebagai berat badan anda (dalam kilogram) dibagi dengan kuadrat tinggi badan anda (dalam meter) atau BMI = Kg/M<sup>2</sup>.
+        </p>
+    </div>
+</section>
+</section>
+
+    <!-- Right Content -->
+    <section class="main-content">
+        <!-- Result Article -->
+    <article>
+        <header>
+            <h2>Calculation Result</h2>
+        </header>
+    </article>
+
+    <section id="result" class="container-d-hidden">
+      <div class="sub-container-mb-1">
+        <h3 id="result-title" class="result-title"></h3>
+        <div id="result-bmi" class="result-bmi"></div>
+        <p id="result-desc" class="result-desc"></p>
+        <button class="btn-result">Download Result</button>
+      </div>
+      <div class="mb-1 paragraph">
+        <p id="result-text"></p>
+        <p id="suggestion-text"></p>
+        <p id="advice-text"></p>
+        <div class="button-cta">
+          <button class="btn-kores">Konsultasi Ahli Gizi Via Aplikasi</button>
+          <button class="btn-kores">Registrasi Online Ahli Gizi</button>
+        </div>
+        <p>
+          BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang, Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.
+        </p>
+      </div>
+      <div class="sub-container-paragraph">
+        <h3 id="risk-title"></h3>
+        <ul id="list-risk" class="list-risk"></ul>
+        <h3>Contact Us!</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1000px-Instagram_logo_2022.svg.png" alt="Instagram" width="60" height="60">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt="Facebook" width="60" height="60">
+        <img src="https://cdn.pixabay.com/photo/2017/08/23/11/30/twitter-2672572_1280.jpg" alt="Twitter" width="60" height="60">
+      </div>
+    </section>
+    </section>
+</main>
+
+  <script src="./js/script.js"></script>
+</body>
 </html>
